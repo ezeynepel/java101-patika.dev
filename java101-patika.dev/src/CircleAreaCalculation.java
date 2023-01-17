@@ -15,7 +15,7 @@ public class CircleAreaCalculation {
 		
 		
 		area = (pi*r*r*a)/360;
-		perimeter = 2* pi*r;
+		perimeter = (2*r) + ((2* pi*r*a)/360);
 		
 		System.out.println("Dairenin alanı: "+ area);
 		System.out.printf("Dairenin çevresi: %.2f", perimeter);
