@@ -11,7 +11,7 @@ public class BolunenSayilarınTop {
 		k = sc.nextInt();
 
 		/*for döngüsüyle:
-		 * for (int i = 1; i <= k; i++) { if (i % 3 == 0) && (i % 4 == 0)){ sum = sum +
+		 * for (int i = 0; i <= k; i++) { if (i % 3 == 0) && (i % 4 == 0)){ sum = sum +
 		 * i; System.out.print(i + ", "); count++; } }
 		 */
 		int i = 0;
