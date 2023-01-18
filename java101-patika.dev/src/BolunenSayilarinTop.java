@@ -7,7 +7,7 @@ public class BolunenSayilarinTop {
 		double average, sum = 0, count = 0;
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Sayı Griniz: ");
+		System.out.println("Sayı Giriniz: ");
 		k = sc.nextInt();
 
 		/*for döngüsüyle:
@@ -26,7 +26,7 @@ public class BolunenSayilarinTop {
 		}
 		System.out.println();
 		average = sum / count;
-		System.out.println(average);
+		System.out.println("Ortalama: " + average);
 
 	}
 }
