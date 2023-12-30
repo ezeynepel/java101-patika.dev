@@ -5,7 +5,7 @@ public class FrequencyOfMem {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int length, ind = 0;
+		int length;
 
 		System.out.print("Enter the array length: ");
 		length = sc.nextInt();
@@ -20,23 +20,24 @@ public class FrequencyOfMem {
 
 		for (int i = 0; i < length; i++) {
 			int count = 1; 
-			for (int j = 1; j < length; j++) {
-				if (arr[i] == arr[j]) {
-					count++;
-				}
-			}
+            for (int j = i + 1; j < length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                }
+            }
 
-			boolean isDuplicate = false;
-			for (int k = 0; k < i; k++) {
-				if (arr[i] == arr[k]) {
-					isDuplicate = true;
-					break;
-				}
-			}
+            
+            boolean isDuplicate = false;
+            for (int k = 0; k < i; k++) {
+                if (arr[i] == arr[k]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
 
-			if (!isDuplicate) {
-				System.out.println(arr[i] + " sayısı " + count + " kere tekrar edildi.");
-			}
+            if (!isDuplicate) {
+            	System.out.println(arr[i] + " numbers repeated " + count + " times.");
+            }
 
 		}
 
