@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class repeatedMem {
+public class RepeatedMem {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class repeatedMem {
 
 		}
 
-		System.out.print("Repeating: ");
+		System.out.print("Repeating even numbers: ");
 		for (int value : arra) {
 			if (value != 0) {
 				System.out.print(value + " ");
