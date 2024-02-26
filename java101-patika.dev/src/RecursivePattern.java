@@ -4,23 +4,31 @@ public class RecursivePattern {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a, num;
-		
+		int num, n;
+
 		System.out.print("N sayısı: ");
 		num = sc.nextInt();
-		a = num;
-		
-		System.out.print("Çıktısı: " + a);
-		while (a>0) {
-			a=a-5;
-			System.out.print(" " + a);
-		}
-		
-		while(a<num){
-			a=a+5;
-			System.out.print(" " + a);
+		n = num;
+		recursiveMethod(num, n);
+
+	}
+
+	public static void recursiveMethod(int num, int n) {
+		System.out.print(n + " ");
+		if (n > 0) {
+			n = n - 5;
+			recursiveMethod(num, n);
+		} else {
+			add(num, n+5);
 		}
 
 	}
 
+	public static void add(int num, int n) {
+		System.out.print(n + " ");
+		if (n < num) {
+			n = n + 5;
+			add(num, n);
+		}
+	}
 }
